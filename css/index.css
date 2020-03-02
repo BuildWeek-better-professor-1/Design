@@ -220,6 +220,9 @@ h5 {
 .container .box1 {
   display: flex;
 }
+.container .box1 p {
+  text-align: center;
+}
 .container .box1 .subformat {
   margin: auto;
   width: 49%;
@@ -237,6 +240,14 @@ h5 {
   height: auto;
   width: 48%;
   float: left;
+}
+.container .box1 .genericPic {
+  height: auto;
+  width: 40%;
+}
+.container .box1 .TheresaPortrait {
+  height: auto;
+  width: 40%;
 }
 .regBox {
   display: flex;
