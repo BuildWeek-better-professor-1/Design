@@ -70,19 +70,33 @@ h1, h2, h3, h4, h5 {
 nav {
     display: flex;
     padding-bottom: 3%;
+    width: 100%;
+    position: relative;
+    justify-content: end;
+    .navigation {
+      position: relative;
+      width: 16%;
+      justify-content: space-between;
+      a {
+        text-decoration: none;
+        color: black;
+        padding: 7px;
+      }
+      a:hover{
+        background-color: purple;
+    color: white;
+      }
+    }
     ul {
         list-style-type: none;
         margin: 0;
         padding: 0;
         overflow: hidden;
       }
-    li {
-    float: right;
-    }
   
   li a, .dropbtn {
     text-align: center;
-    padding: 14px 16px;
+    padding: 14px 8px;
     text-decoration: none;
     color: black;
   }
@@ -100,7 +114,7 @@ nav {
     display: none;
     position: absolute;
     background-color: #f9f9f9;
-    min-width: 160px;
+    min-width: 150px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
   }
@@ -154,11 +168,65 @@ h2 {
     float: left;
 }
 }
-footer {
-    display: flex;
-    font-size: 1.6rem;
+}
+.regBox {
+  display: flex;
+  margin: auto;
+  width: 70%;
+  padding: 10%;
+  border: 3px solid black;
+  align-content: center;
+  
+
+#instructorBox {
+    flex-direction: column;
     margin: auto;
-    }
+    text-align: center;
+  .apple {
+    width: 75%;
+    height: auto;
+  }
+  a {
+    text-decoration: none;
+    color: black;
+  }
+  a:hover {
+    background-color: purple;
+    color: white;
+
+  }
+}
+#studentBox {
+  flex-direction: column;
+  margin: auto;
+  text-align: center;
+  .graduate {
+    width: 75%;
+    height: auto;
+  }
+  a {
+    text-decoration: none;
+    color: black;
+  }
+  a:hover {
+    background-color: purple;
+    color: white;
+
+  }
 }
 
+
+
+
+}
+footer {
+  display: flex;
+  width: 100vw;
+  justify-content: center;
+  p{
+    text-align:center;
+    font-size: 1.6rem;
+    
+  } 
+  }
 

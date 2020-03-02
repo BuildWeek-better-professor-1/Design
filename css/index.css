@@ -148,6 +148,23 @@ h5 {
 .container nav {
   display: flex;
   padding-bottom: 3%;
+  width: 100%;
+  position: relative;
+  justify-content: end;
+}
+.container nav .navigation {
+  position: relative;
+  width: 16%;
+  justify-content: space-between;
+}
+.container nav .navigation a {
+  text-decoration: none;
+  color: black;
+  padding: 7px;
+}
+.container nav .navigation a:hover {
+  background-color: purple;
+  color: white;
 }
 .container nav ul {
   list-style-type: none;
@@ -155,13 +172,10 @@ h5 {
   padding: 0;
   overflow: hidden;
 }
-.container nav li {
-  float: right;
-}
 .container nav li a,
 .container nav .dropbtn {
   text-align: center;
-  padding: 14px 16px;
+  padding: 14px 8px;
   text-decoration: none;
   color: black;
 }
@@ -177,7 +191,7 @@ h5 {
   display: none;
   position: absolute;
   background-color: #f9f9f9;
-  min-width: 160px;
+  min-width: 150px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
@@ -224,8 +238,54 @@ h5 {
   width: 48%;
   float: left;
 }
-.container footer {
+.regBox {
   display: flex;
-  font-size: 1.6rem;
   margin: auto;
+  width: 70%;
+  padding: 10%;
+  border: 3px solid black;
+  align-content: center;
+}
+.regBox #instructorBox {
+  flex-direction: column;
+  margin: auto;
+  text-align: center;
+}
+.regBox #instructorBox .apple {
+  width: 75%;
+  height: auto;
+}
+.regBox #instructorBox a {
+  text-decoration: none;
+  color: black;
+}
+.regBox #instructorBox a:hover {
+  background-color: purple;
+  color: white;
+}
+.regBox #studentBox {
+  flex-direction: column;
+  margin: auto;
+  text-align: center;
+}
+.regBox #studentBox .graduate {
+  width: 75%;
+  height: auto;
+}
+.regBox #studentBox a {
+  text-decoration: none;
+  color: black;
+}
+.regBox #studentBox a:hover {
+  background-color: purple;
+  color: white;
+}
+footer {
+  display: flex;
+  width: 100vw;
+  justify-content: center;
+}
+footer p {
+  text-align: center;
+  font-size: 1.6rem;
 }
