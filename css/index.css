@@ -145,80 +145,97 @@ h5 {
   margin: 0 auto;
   padding: 20px 1%;
 }
-.container nav {
+.container .navBox {
   display: flex;
-  padding-bottom: 3%;
   width: 100%;
+  background: #282c34;
+  margin-bottom: 3%;
+}
+@media (max-width: 500px) {
+  .container .navBox {
+    flex-direction: column;
+    text-align: center;
+    margin: auto;
+  }
+}
+.container .navBox .logo {
+  position: relative;
+  width: 70px;
+  height: auto;
+}
+.container .navBox h3 {
+  margin-right: 25%;
+  padding-top: 2%;
+  width: 400px;
+  position: relative;
+  color: white;
+  font-size: 3.6rem;
+}
+@media (max-width: 500px) {
+  .container .navBox h3 {
+    margin: auto;
+    position: static;
+  }
+}
+.container .navBox nav {
+  width: 45%;
+  padding-top: 3%;
+  padding-bottom: 3%;
   position: relative;
   justify-content: end;
 }
-.container nav .navigation {
-  position: relative;
-  width: 16%;
-  justify-content: space-between;
+@media (max-width: 500px) {
+  .container .navBox nav {
+    display: flex;
+    flex-direction: column;
+    position: static;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+  }
 }
-.container nav .navigation a {
+.container .navBox nav a {
   text-decoration: none;
-  color: black;
+  color: white;
   padding: 7px;
 }
-.container nav .navigation a:hover {
-  background-color: purple;
-  color: white;
+@media (max-width: 500px) {
+  .container .navBox nav a {
+    width: 100%;
+    text-align: center;
+  }
 }
-.container nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-}
-.container nav li a,
-.container nav .dropbtn {
-  text-align: center;
-  padding: 14px 8px;
-  text-decoration: none;
+.container .navBox nav a:hover {
+  background-color: white;
   color: black;
-}
-.container nav li a:hover,
-.container nav .dropdown:hover .dropbtn {
-  background-color: purple;
-  color: white;
-}
-.container nav li.dropdown {
-  display: inline-block;
-}
-.container nav .dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 150px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
-}
-.container nav .dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  text-align: left;
-}
-.container nav .dropdown-content a:hover {
-  background-color: purple;
-}
-.container nav .dropdown:hover .dropdown-content {
-  display: block;
 }
 .container h1 {
   font-size: 6rem;
   text-align: center;
   text-transform: uppercase;
 }
+@media (max-width: 500px) {
+  .container h1 {
+    font-size: 4.8rem;
+  }
+}
 .container h2 {
+  margin-top: 2%;
   font-size: 4.8rem;
   text-align: center;
 }
+@media (max-width: 500px) {
+  .container h2 {
+    font-size: 3.6rem;
+  }
+}
 .container .box1 {
   display: flex;
+}
+@media (max-width: 500px) {
+  .container .box1 {
+    flex-direction: column;
+  }
 }
 .container .box1 p {
   text-align: center;
@@ -226,6 +243,13 @@ h5 {
 .container .box1 .subformat {
   margin: auto;
   width: 49%;
+}
+@media (max-width: 500px) {
+  .container .box1 .subformat {
+    display: flex;
+    flex-direction: column;
+    width: 98%;
+  }
 }
 .container .box1 .subformat li {
   font-size: 2.8rem;
@@ -236,58 +260,97 @@ h5 {
   width: 48%;
   float: right;
 }
+@media (max-width: 500px) {
+  .container .box1 .swampImg {
+    width: 98%;
+    float: none;
+    margin: auto;
+  }
+}
 .container .box1 .toolsImg {
   height: auto;
   width: 48%;
   float: left;
 }
-.container .box1 .genericPic {
+@media (max-width: 500px) {
+  .container .box1 .toolsImg {
+    width: 98%;
+    float: none;
+    margin: auto;
+  }
+}
+.container .box1 .teamPic {
   height: auto;
   width: 40%;
+}
+@media (max-width: 500px) {
+  .container .box1 .teamPic {
+    width: 98%;
+    margin: auto;
+  }
 }
 .container .box1 .TheresaPortrait {
   height: auto;
   width: 40%;
 }
+@media (max-width: 500px) {
+  .container .box1 .TheresaPortrait {
+    width: 98%;
+    margin: auto;
+  }
+}
+.perks {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 98%;
+  padding: 10%;
+  justify-content: space-around;
+  background: #add8e6;
+}
+@media (max-width: 500px) {
+  .perks {
+    flex-direction: column;
+    flex-wrap: none;
+  }
+}
+.perks .box2 {
+  width: 35%;
+  text-align: center;
+  margin: 5%;
+}
+@media (max-width: 500px) {
+  .perks .box2 {
+    width: 98%;
+    margin: auto;
+  }
+}
 .regBox {
   display: flex;
-  margin: auto;
-  width: 70%;
-  padding: 10%;
+  padding: 5%;
+  margin-top: 5%;
+  margin-bottom: 5%;
   border: 3px solid black;
-  align-content: center;
 }
-.regBox #instructorBox {
+@media (max-width: 500px) {
+  .regBox {
+    flex-direction: column;
+    margin: auto;
+  }
+}
+.regBox .box3 {
+  display: flex;
   flex-direction: column;
-  margin: auto;
-  text-align: center;
 }
-.regBox #instructorBox .apple {
+.regBox .box3 img {
   width: 75%;
   height: auto;
 }
-.regBox #instructorBox a {
-  text-decoration: none;
-  color: black;
-}
-.regBox #instructorBox a:hover {
-  background-color: purple;
-  color: white;
-}
-.regBox #studentBox {
-  flex-direction: column;
-  margin: auto;
+.regBox .box3 a {
   text-align: center;
-}
-.regBox #studentBox .graduate {
-  width: 75%;
-  height: auto;
-}
-.regBox #studentBox a {
   text-decoration: none;
   color: black;
 }
-.regBox #studentBox a:hover {
+.regBox .box3 a:hover {
   background-color: purple;
   color: white;
 }
